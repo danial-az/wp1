@@ -1,0 +1,62 @@
+<!DOCTYPE html>  
+<html lang="fa">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>محاسبه سود کلی وام</title>  
+    <link rel="stylesheet">  
+    <style>  
+        body {  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            height: 100vh;  
+            margin: 0;  
+            font-family: Arial, sans-serif;  
+            background-color: #f4f4f4;  
+        }  
+        .container {  
+            width: 380px; 
+            padding: 20px;  
+            border-radius: 8px;  
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
+            background-color: white;  
+        }  
+        h1 {  
+            text-align: center;  
+            margin-bottom: 20px;  
+        }  
+        input[type="number"] {  
+            margin-bottom: 15px;  
+            padding: 15px; 
+            width: 90%;  
+            font-size: 18px; 
+            border: 1px solid #ccc;  
+            border-radius: 4px;  
+        }  
+        output {  
+            display: block;  
+            margin-top: 10px;  
+            font-size: 1.5em; 
+            border: 1px solid #ccc;  
+            padding: 15px;  
+            width: 90%;  
+            background-color: #e9e9e9;  
+            text-align: center;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="container">  
+        <h1>محاسبه سود کلی وام</h1>  
+        <input type="number" id="receivedAmount" placeholder="مبلغ دریافتی" />  
+        <input type="number" id="installmentAmount" placeholder="مبلغ هر قسط" />  
+        <input type="number" id="numberOfInstallments" placeholder="تعداد اقساط" />  
+        <div>  
+            <label> سود کلی وام: </label>  
+            <output id="result" readonly></output>  
+        </div>  
+        <script src="script3.js"></script>  
+    </div>  
+</body>  
+</html>  
